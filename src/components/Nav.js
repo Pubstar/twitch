@@ -1,6 +1,11 @@
-import nav_dots from '../images/nav_dots.svg'
-import twitch_logo from '../images/twitch_logo.png'
-import magnifying_glass from '../images/magnifying_glass.svg'
+import nav_dots from '../images/nav/nav_dots.svg'
+import twitch_logo from '../images/nav/twitch_logo.png'
+import magnifying_glass from '../images/nav/magnifying_glass.svg'
+import crown from '../images/nav/nav_crown.svg'
+import notifications from '../images/nav/nav_notifications.svg'
+import messages from '../images/nav/nav_messages.svg'
+import coin from '../images/nav/nav_coin.svg'
+import profile from '../images/nav/nav_profile.png'
 
 function Nav() {
     return (
@@ -16,15 +21,15 @@ function Nav() {
                 <img src={magnifying_glass} alt="" />
             </div>
             <div className='right'>
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
+                <img src={magnifying_glass} alt="" className='search-button' />
+                <img src={crown} alt="" />
+                <img src={notifications} alt="" />
+                <img src={messages} alt="" />
                 <div className="bits-button">
-                    <img src="" alt="" />
+                    <img src={coin} alt="" />
                     <span>Buy Bits</span>
                 </div>
-                <img src="" alt="" />
-                <img src="" alt="" />
+                <img src={profile} alt="" className='profile-picture' />
             </div>
         </div>
     );

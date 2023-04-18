@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
   height: 50px;
   background-color: #0e0e10;
   color: white;
@@ -14,12 +15,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   gap: 20px;
 }
 .nav div *:hover {
   cursor: pointer;
 }
-.nav div input {
+.nav .middle {
+  gap: 1px;
+}
+.nav .middle input {
   height: 35px;
   width: 355px;
   background-color: hsla(0, 0%, 100%, 0.16);
@@ -30,9 +35,6 @@
   color: #efeff1;
   padding: 10px;
 }
-.nav .middle {
-  gap: 1px;
-}
 .nav .middle input:hover {
   cursor: text;
 }
@@ -40,12 +42,56 @@
   background-color: rgba(83, 83, 95, 0.38);
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  padding: 7.5px;
+}
+.nav .right .bits-button {
+  font-size: 14px;
+  background: rgba(83, 83, 95, 0.38);
   padding: 5px;
+  padding-right: 10px;
+}
+.nav .right .profile-picture {
+  width: 30px;
+  border-radius: 180px;
+}
+.nav .right .search-button {
+  display: none;
 }
 
+@media only screen and (max-width: 1200px) {
+  .nav div {
+    gap: 10px;
+  }
+  .nav .middle input {
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .nav .middle {
+    display: none;
+  }
+  .nav .right .search-button {
+    display: block;
+  }
+}
+aside {
+  height: 100vh;
+  width: 240px;
+  background-color: red;
+}
+
+@media only screen and (max-width: 1200px) {
+  aside {
+    width: 50px;
+  }
+}
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-family: "Inter", sans-serif;
+}
+
+main {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
