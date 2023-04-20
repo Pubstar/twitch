@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from './components/Nav';
 import Sidebar from './components/Sidebar/Sidebar';
+import Row from './components/Row';
 
 function App() {
   return (
@@ -8,8 +9,9 @@ function App() {
       <Nav />
       <main>
         <Sidebar />
-        <div>
-          <h1>This is supposed to look like twitch soon</h1>
+        <div className='rows-container'>
+          <h1>Live channels you might like</h1>
+          <Row />
         </div>
       </main>
     </div>
