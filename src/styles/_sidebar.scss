@@ -1,10 +1,11 @@
 aside {
     height: 100vh;
-    min-width: 240px;
+    width: 240px;
     background-color: #1f1f23;
     color: white;
     padding-top: 20px;
     overflow: hidden;
+    flex-shrink: 0;
 
     div {
         display: flex;
