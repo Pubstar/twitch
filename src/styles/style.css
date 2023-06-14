@@ -143,14 +143,18 @@ aside div:hover {
   display: flex;
   gap: 10px;
 }
+.row .channel:hover {
+  cursor: pointer;
+}
 .row .channel {
+  max-width: 310px;
   margin-top: 20px;
 }
 .row .channel .snapshot-img {
   position: relative;
 }
 .row .channel .snapshot-img img {
-  width: 315px;
+  width: 310px;
 }
 .row .channel .snapshot-overlay {
   position: absolute;
@@ -193,6 +197,11 @@ aside div:hover {
 }
 .row .channel .profile-info .stream-info .title {
   font-weight: 600;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 250px;
+  white-space: nowrap;
 }
 .row .channel .profile-info .stream-info .profile-name, .row .channel .profile-info .stream-info .game {
   font-weight: 100;
@@ -200,6 +209,9 @@ aside div:hover {
 }
 .row .channel .profile-info .stream-info .tags {
   margin-top: 5px;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
 }
 .row .channel .profile-info .stream-info .tags .tag {
   background-color: hsla(0, 0%, 100%, 0.08);
@@ -222,4 +234,9 @@ main {
   display: flex;
   background-color: #0e0e10;
   color: white;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */

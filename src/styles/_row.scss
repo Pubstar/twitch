@@ -7,14 +7,19 @@
     display: flex;
     gap: 10px;
 
+    .channel:hover {
+        cursor: pointer;
+    }
+
     .channel {
+        max-width: 310px;
         margin-top: 20px;
 
         .snapshot-img {
             position: relative;
 
             img {
-                width: 315px;
+                width: 310px;
             }
         }
 
@@ -63,6 +68,11 @@
 
                 .title {
                     font-weight: 600;
+                    font-size: 14px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    max-width: 250px;
+                    white-space: nowrap;
                 }
 
                 .profile-name {
@@ -76,6 +86,9 @@
 
                 .tags {
                     margin-top: 5px;
+                    display: flex;
+                    gap: 5px;
+                    flex-wrap: wrap;
 
                     .tag {
                         background-color: hsla(0, 0%, 100%, .08);
