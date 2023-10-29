@@ -16,6 +16,31 @@ const row = (props) => {
         <div className='row'>
             <div className="channel">
                 <div className='snapshot-img'>
+                    <img src={props.snapshot} alt="" />
+                    <div className='snapshot-overlay'>
+                        <div className="live-icon">LIVE</div>
+                        <div className="viewers">{props.viewers}</div>
+                    </div>
+                </div>
+                <div className='profile-info'>
+                    <img src={props.profile_img} alt="" className="profile-pic" />
+                    <div className='stream-info'>
+                        <span className="title">{props.title}</span>
+                        <span className="profile-name">{props.name}</span>
+                        <span className="game">{props.game}</span>
+                        <div className="tags">
+                            {props.tags.map(e => {
+                                return <span className="tag">{e}</span>
+
+                            })}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            {/*             <div className="channel">
+                <div className='snapshot-img'>
                     <img src={snapshot_hasanAbi} alt="" />
                     <div className='snapshot-overlay'>
                         <div className="live-icon">LIVE</div>
@@ -122,7 +147,7 @@ const row = (props) => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

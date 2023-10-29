@@ -142,6 +142,9 @@ aside div:hover {
 .row {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
+  max-height: 320px;
+  overflow-y: hidden;
 }
 .row .channel:hover {
   cursor: pointer;
@@ -154,7 +157,7 @@ aside div:hover {
   position: relative;
 }
 .row .channel .snapshot-img img {
-  width: 310px;
+  width: 100%;
 }
 .row .channel .snapshot-overlay {
   position: absolute;
