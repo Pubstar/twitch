@@ -1,16 +1,5 @@
 import React from 'react';
 
-import snapshot_theBausffs from '../images/Live/TheBaussffs/snapshot.jpg';
-import profile_theBausffs from '../images/Live/TheBaussffs/profile_pic.png';
-import snapshot_hasanAbi from '../images/Live/HasanAbi/snapshot.jpg';
-import profile_hasanAbi from '../images/Live/HasanAbi/hasan_profile_pic.jpeg';
-import snapshot_Fextralife from '../images/Live/Fextralife/snapshot.jpg';
-import profile_Fextralife from '../images/Live/Fextralife/profile_pic.png';
-import snapshot_Morrog from '../images/Live/Morrog/snapshot.jpg';
-import profile_Morrog from '../images/Live/Morrog/profile_pic.png';
-import snapshot_Towelliee from '../images/Live/Towelliee/snapshot.jpg';
-import profile_Towelliee from '../images/Live/Towelliee/profile_pic.jpeg';
-
 const row = (props) => {
     return (
         <div className='row'>
