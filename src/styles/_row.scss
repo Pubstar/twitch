@@ -1,5 +1,9 @@
 .rows-container {
-    padding: 30px;
+    padding-left: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
     overflow: hidden;
 }
 

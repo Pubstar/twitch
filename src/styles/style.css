@@ -135,7 +135,11 @@ aside div:hover {
   }
 }
 .rows-container {
-  padding: 30px;
+  padding-left: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
   overflow: hidden;
 }
 
@@ -238,8 +242,8 @@ main {
   background-color: #0e0e10;
   color: white;
 }
-
-h1 {
+main h1 {
   font-size: 24px;
   font-weight: 600;
+  padding: 20px;
 }/*# sourceMappingURL=style.css.map */
